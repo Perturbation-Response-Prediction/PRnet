@@ -2,10 +2,10 @@
 # @Author: Xiaoning Qi
 # @Date:   2022-06-13 09:47:44
 # @Last Modified by:   Xiaoning Qi
-# @Last Modified time: 2024-10-31 16:48:51
+# @Last Modified time: 2024-11-04 15:56:30
 import os
 
-os.environ['CUDA_VISIBLE_DEVICES'] = '0'
+os.environ['CUDA_VISIBLE_DEVICES'] = '0,1'
 
 import sys
 print(sys.path)

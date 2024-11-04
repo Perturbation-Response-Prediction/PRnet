@@ -89,7 +89,7 @@ To test the L1000 dataset:
 python test_sciplex.py --split_key drug_split_0       
 ```
 
-## Step 4: Analysis the results
+## Step 5: Analysis the results
 To analysis the L1000 dataset:
 ```
 python analysis_lincs.py --split_key drug_split_4
@@ -111,7 +111,7 @@ python analysis_sciplex.py --split_key drug_split_0
 
 ## References
 
-paper: Xiaoning Qi, Lianhe Zhao, Chenyu Tian, Yueyue Li, Zhen-Lin Chen, Peipei Huo, Runsheng Chen, Xiaodong Liu, Baoping Wan, Shengyong Yang and Yi Zhao. Predicting transcriptional responses to novel chemical perturbations using deep generative model[J]. Nature Communications, 2024.
+paper: Xiaoning Qi, Lianhe Zhao, Chenyu Tian, Yueyue Li, Zhen-Lin Chen, Peipei Huo, Runsheng Chen, Xiaodong Liu, Baoping Wan, Shengyong Yang and Yi Zhao. Predicting transcriptional responses to novel chemical perturbations using deep generative model[J]. Nature Communications, 2024, 15(1): 1-19.
 
 
 code: [![DOI](https://zenodo.org/badge/746721413.svg)](https://zenodo.org/doi/10.5281/zenodo.13751383)
