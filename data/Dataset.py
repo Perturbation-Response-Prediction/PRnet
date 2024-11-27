@@ -51,7 +51,7 @@ class DrugDoseAnnDataset(Dataset):
         self.drug_type_list = self.drug_adata.obs['SMILES'].to_list()
         self.dose_list = self.drug_adata.obs['dose'].to_list()
         self.obs_list = self.drug_adata.obs[obs_key].to_list()
-        self.encode_drug_doses = Drug_dose_encoder(self.drug_type_list, self.dose_list)
+        self.encode_drug_doses = Drug_dose_encoder(self.drug_type_list, self.dose_list, comb_num=comb_num)
 
         self.encode_drug_doses = torch.tensor(self.encode_drug_doses, dtype=torch.float32)
 
