@@ -38,8 +38,7 @@ def train_valid_test(adata: AnnData, split_key = 'cov_drug_dose_name_split'):
     train_index = adata.obs[adata.obs[split_key]=='train'].index.tolist()
     valid_index = adata.obs[adata.obs[split_key]=='valid'].index.tolist()
     test_index = adata.obs[adata.obs[split_key]=='test'].index.tolist()
-    control_index = adata.obs[adata.obs['dose']==0.0].index.tolist()
-
+    control_index = adata.obs[adata.obs['dose'].astype(float)==0.0].index.tolist()
 
     if len(train_index)>0:
         train_index = train_index + control_index
