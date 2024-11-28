@@ -10,7 +10,8 @@ We provide [model pretrained weight](http://prnet.drai.cn:9003/tcm/download/?fil
 If the links above fail to redirect, please download the corresponding data and pretrained model weights from: [http://prnet.drai.cn/Statistics/](http://prnet.drai.cn/Statistics/). For the data files, download `LINCS L1000 Chemical Perturbations` and `Sci-plex Chemical Perturbations` from the `Supplementary Dataset` section. For the model weights, download the `PRnet model` from the `Supplementary Dataset` section. Then change the names of the datasets to `Lincs_L1000.h5ad` and `Sci_Plex.h5ad` respectively. If the dataset cannot be downloaded, please adjust your browser settings to allow insecure content on the current webpage by setting it to "Allow."
 
 
-The links above are temporarily unavailable due to bandwidth limitations. Please download the corresponding data from [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14033163.svg)](https://zenodo.org/doi/10.5281/zenodo.14033163).
+The links above are temporarily unavailable due to bandwidth limitations. Please download the corresponding data from [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14230870.svg)](https://zenodo.org/doi/10.5281/zenodo.14230870).
+
 
 To clone our model, install github and run:
 ```
@@ -95,13 +96,11 @@ python test_sciplex.py --split_key drug_split_0
 ## Step 5: Analysis the results
 To analysis the L1000 dataset:
 ```
-python analysis_lincs.py --split_key drug_split_4
-             
+python analysis_lincs.py --split_key drug_split_4      
 ```
 To analysis the Sci-plex dataset:
 ```
-python analysis_sciplex.py --split_key drug_split_0
-             
+python analysis_sciplex.py --split_key drug_split_0            
 ```
 
 ## Figures
