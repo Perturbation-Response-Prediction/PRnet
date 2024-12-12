@@ -455,6 +455,11 @@ class PRnetTrainer:
             x_true = control.cpu().numpy()
             x_true_array = np.concatenate((x_true_array, x_true),axis=0)
 
+            y_true = target.cpu().numpy()
+            y_true_array = np.concatenate((y_true_array, y_true), axis=0)
+            with open(self.results_save_dir + self.split_key + "_y_true_array.csv", 'a+') as f:
+                np.savetxt(f, y_true, delimiter=",")
+
             
             with open(self.results_save_dir+self.split_key+"_y_pre_array.csv", 'a+') as f:
                 np.savetxt(f, nb_sample, delimiter=",")

@@ -50,7 +50,7 @@ if __name__ == "__main__":
         'scheduler_patience' : 5,
         'n_genes' : 20,
         'loss' : ['GUSS'], 
-        'obs_key' : 'cov_drug_dose_name'
+        'obs_key' : 'cov_drug_name'
     }  
 
 
