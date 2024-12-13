@@ -34,6 +34,8 @@ if __name__ == "__main__":
     print(os.getcwd())
 
     adata = sc.read(args_train.data_path)
+    sc.pp.normalize_total(adata)
+    sc.pp.log1p(adata)
 
     
 

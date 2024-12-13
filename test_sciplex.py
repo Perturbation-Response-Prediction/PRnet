@@ -57,6 +57,9 @@ if __name__ == "__main__":
     print(os.getcwd())
 
     adata = sc.read('./dataset/Sci_Plex.h5ad')
+    sc.pp.normalize_total(adata)
+    sc.pp.log1p(adata)
+    
 
     
 
